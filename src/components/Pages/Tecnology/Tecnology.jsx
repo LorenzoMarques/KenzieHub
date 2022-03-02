@@ -8,7 +8,7 @@ import TecnologyRegister from "../../TecnologyRegister/TecnologyRegister";
 import { useState } from "react";
 import TecnologyUpdate from "../../TencologyUpdate/TecnologyUpdate";
 import { useEffect } from "react";
-import api from "../../../services";
+import att from "../../../services/att";
 
 const Tecnology = ({ auth, setAuth }) => {
   const [register, setRegister] = useState(false);
@@ -16,6 +16,7 @@ const Tecnology = ({ auth, setAuth }) => {
   const [user] = useState(JSON.parse(localStorage.getItem("user")));
   const [techs, setTechs] = useState([]);
   const [id, setId] = useState("");
+  const [title, setTitle] = useState("");
   console.log(auth);
 
   const returnToMainPage = () => {
@@ -26,7 +27,7 @@ const Tecnology = ({ auth, setAuth }) => {
 
   useEffect(() => {
     if (auth) {
-      api.get(`/users/${user.id}`).then((res) => setTechs(res.data.techs));
+      att(user, setTechs);
     } else {
       window.location.href = "/";
     }
@@ -69,6 +70,7 @@ const Tecnology = ({ auth, setAuth }) => {
                 onClick={() => {
                   setUpdate(true);
                   setId(element.id);
+                  setTitle(element.title);
                 }}
               >
                 <h3>{element.title}</h3>
@@ -92,6 +94,7 @@ const Tecnology = ({ auth, setAuth }) => {
           setUpdate={setUpdate}
           id={id}
           setUptade={setUpdate}
+          name={title}
         />
       )}
     </>

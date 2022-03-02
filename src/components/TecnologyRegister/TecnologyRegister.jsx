@@ -4,7 +4,7 @@ import { Header, Card } from "./TecStyle";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import api from "../../services";
+import api from "../../services/api";
 
 const TecnologyRegister = ({ setRegister, setTechs }) => {
   const [title, setTitle] = useState("");

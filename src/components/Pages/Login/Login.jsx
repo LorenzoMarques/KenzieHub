@@ -8,7 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useHistory } from "react-router-dom";
-import api from "../../../services/index.jsx";
+import api from "../../../services/api.jsx";
 
 const Login = ({ auth, setAuth }) => {
   const history = useHistory();

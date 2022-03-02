@@ -1,10 +1,15 @@
 import { Button } from "../styledButton/StyledButton";
 import { Header, Card } from "../TecnologyRegister/TecStyle";
-import api from "../../services";
+import api from "../../services/api";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import att from "../../services/att";
 
-const TecnologyUpdate = ({ setUpdate, setTechs, techs, id }) => {
+const TecnologyUpdate = ({ setUpdate, name, setTechs, techs, id }) => {
   const [token] = useState(JSON.parse(localStorage.getItem("token")));
+  const [title] = useState(name);
+  const [status, setStatus] = useState("Iniciante");
+  const [user] = useState(JSON.parse(localStorage.getItem("user")));
 
   const remove = (id) => {
     api
@@ -19,6 +24,26 @@ const TecnologyUpdate = ({ setUpdate, setTechs, techs, id }) => {
       });
   };
 
+  const update = (id) => {
+    api
+      .put(
+        `/users/techs/${id}`,
+        {
+          status: status,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
+      .then(() => {
+        toast.success("Alteração feita com sucesso");
+        setUpdate(false);
+        att(user, setTechs);
+      });
+  };
+
   return (
     <Card>
       <Header>
@@ -29,19 +54,26 @@ const TecnologyUpdate = ({ setUpdate, setTechs, techs, id }) => {
       </Header>
       <form>
         <p>Nome do projeto</p>
-        <input type="text" />
+        <input type="text" value={title} />
         <p>Selecionar status</p>
         <select
           name="
             "
           id=""
+          value={status}
+          onChange={(e) => setStatus(e.target.value)}
         >
           <option value="Iniciante">Iniciante</option>
           <option value="Intermediário">Intermediário</option>
           <option value="Avançado">Avançado</option>
         </select>
         <div>
-          <Button backgroundColor="#ff577f" className="button1" type="button">
+          <Button
+            backgroundColor="#ff577f"
+            className="button1"
+            type="button"
+            onClick={() => update(id)}
+          >
             Salvar alterações
           </Button>
           <Button
