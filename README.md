@@ -3,9 +3,9 @@
 https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/
 
 <h2>Prints da Aplicação</h2>
-<img src="/ImagesReadMe/1.png" width=100 heigth=100/>
-<img src="/ImagesReadMe/2.png" width=100 heigth=100/>
-<img src="/ImagesReadMe/3.png" width=100 heigth=100/>
+<img src="/ImagesReadMe/1.png" width=200 heigth=200/>
+<img src="/ImagesReadMe/2.png" width=200 heigth=200/>
+<img src="/ImagesReadMe/3.png" width=200 heigth=200/>
 
 <p>
 Kenziehub é um hub de portfólios de programadores
