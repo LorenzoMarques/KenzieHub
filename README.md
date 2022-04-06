@@ -5,7 +5,7 @@ https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/
 <h2>Prints da Aplicação</h2>
 <div display="flex">
 <img src="/ImagesReadMe/1.png" width=200 height=200/>
-<img src="/ImagesReadMe/2.png" width=200 height=100/>
+<img src="/ImagesReadMe/2.png" width=200 height=200/>
 <img src="/ImagesReadMe/3.png" width=200 height=200/>
 </div>
 <p>
