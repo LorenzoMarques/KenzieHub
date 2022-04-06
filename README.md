@@ -11,6 +11,6 @@ https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/
 <p>
 Kenziehub é um hub de portfólios de programadores
 
-Nesta aplicação o usuário poderá se cadastrar, adicionar as tecnologias que ele aprendeu e está aprendendo.
+Nesta aplicação o usuário poderá se cadastrar e adicionar as tecnologias que ele aprendeu e está aprendendo.
 
 </p>
