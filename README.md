@@ -1,10 +1,8 @@
 # <a href="https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/">
-<p>
-Kenziehub é um hub de portfólios de programadores
+<h2>
+Clique Aqui para ver a aplicação rodando.
 
-Nesta aplicação o usuário poderá se cadastrar e adicionar as tecnologias que ele aprendeu e está aprendendo.
-
-</p>
+</h2>
 </a>
 
 
