@@ -1,6 +1,6 @@
-# Link no vercel
+# <a href="https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/
+"><p>Clique Aqui para ver a aplicação rodando</p></a>
 
-https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/
 
 <h2>Prints da Aplicação</h2>
 <div display="flex">
