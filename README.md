@@ -1,4 +1,4 @@
-# <a href="https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/" target="_blank" rel="noopener noreferrer" font-size="14px">
+# <a href="https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/" target="_blank" rel="noopener noreferrer" font-size="14px" >
 <p>
 Clique Aqui para ver a aplicação rodando.
 
