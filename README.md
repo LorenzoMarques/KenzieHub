@@ -1,7 +1,7 @@
 # <a href="https://react-entrega-s2-kenzie-hub-lorenzomarques.vercel.app/">
-    <p>
+    <h1>
         Clique Aqui para ver a aplicação rodando
-    </p>
+    </h1>
 </a>
 
 
